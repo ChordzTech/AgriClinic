@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".loginActivities.cards.FirstCardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text="आडसाली उस एकरी \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार 1 - सरळ खतामधून (यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=" प्रकार 2 - अडसाली ऊस लागवडीसाठी लागणारी रासायनीक खते (यूरिया + 10:26:26 ग्रेड )" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName2">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text="आडसाली उस एकरी \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार ३ -(१९:१९:१९ , यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName7">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text="आडसाली उस एकरी \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार ४ -  (१५:१५:१५ , यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName8">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text="पूर्वहंगामी ऊस लागवड  \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार 1 - सरळ खतामधून (यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName3">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=" प्रकार 2 - पूर्वहंगामी ऊस लागवडीसाठी लागणारी रासायनीक खते (यूरिया + 10:26:26 ग्रेड )" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName9"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName4">
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text="पूर्वहंगामी उस लागवड एकरी \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार ३ -(१९:१९:१९ , यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)"  />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName10"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName9">
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text="पूर्वहंगामी उस लागवड एकरी \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार ४ -(१५:१५:१५ , यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)"  />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName10">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text="सुरू ऊस / खोडवा ऊस लागवड  \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार 1 - सरळ खतामधून (यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName5">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=" प्रकार 2 - सुरू ऊस / खोडवा ऊस लागवडीसाठी लागणारी रासायनीक खते (यूरिया + 10:26:26 ग्रेड )" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName6">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=" सुरु ऊस /खोडवा उस लागवड \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार ३ - सरळ खतामधून (१९:१९:१९ ,यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTableName12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName11">
+
+                <TextView
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_small"
+                    android:text=" सुरु ऊस /खोडवा उस लागवड \n रासायनिक खतांच्या मात्रा (किलो मध्ये) \n प्रकार ४ - सरळ खतामधून (१५:१५:१५ ,यूरिया, सिंगल सुपर फॉस्फेट, म्युरेट ऑफ पोटॅश)" />
+            </androidx.cardview.widget.CardView>
+            <View
+                android:id="@+id/dummyView"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_margin="@dimen/margin_small"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvTableName12" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

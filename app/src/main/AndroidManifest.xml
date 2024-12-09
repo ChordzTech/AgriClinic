@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgroClinic"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".sugarcaneSeeds.SeedsInTrayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sugarcaneSeeds.CoupletSeedsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sugarcaneSeeds.SugarCaneSeedsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UTwelthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UEleventhTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UTenthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UNinthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UEighthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.USeventhTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.USixthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UFifthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UFourthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UThirdTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.USecondTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".userInputTables.UFirstTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.TwelevthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.EleventhTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.TenthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.NinthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.EighthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.SeventhTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.SixthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.FifthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.FourthTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.ThirdTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.SecondTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tables.FirstTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cards.FirstCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cards.SecondCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cards.ThirdCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cards.FourthCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cards.FifthCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cards.SixthCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SubscriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeDescActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CropsDescActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditActivity"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".activity_sign_in" -->
+        <!-- android:exported="false" /> -->
+        <activity
+            android:name=".loginActivities.MultiLanguageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivities.OtpVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivities.RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

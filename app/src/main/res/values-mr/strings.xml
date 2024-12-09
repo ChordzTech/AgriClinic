@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" ऍग्रोक्लिनिक"</string>
+    <string name="app_name_with_version">ऍग्रोक्लिनिक v1.0</string>
+    <string name="agro_clinic">" ऍग्रोक्लिनिक"</string>
+    <string name="log_in">लॉगिन करा</string>
+    <string name="enter_phone_number">फोन नंबर प्रविष्ट करा</string>
+    <string name="enter_password">पासवर्ड टाका</string>
+    <string name="forgot_password">पासवर्ड विसरलात?</string>
+    <string name="register">नोंदणी करा</string>
+    <string name="enter_your_name">आपले नांव लिहा</string>
+    <string name="confirm_password">पासवर्डची पुष्टी करा</string>
+    <string name="already_have_an_account">आधीपासूनच खाते आहे ?</string>
+    <string name="don_t_have_an_account">खाते नाही?</string>
+    <string name="_100_tons_per_acer">100 टन प्रति एसर</string>
+    <string name="otp_verification">OTP पडताळणी</string>
+    <string name="verify_sms_text">Agro Clinic तुम्हाला OTP पाठवेल  फोन नंबर पडताळणीसाठी.</string>
+    <string name="verify_otp_and_login">ओटीपी आणि लॉगिन सत्यापित करा</string>
+    <string name="select_language">भाषा निवडा</string>
+    <string name="english">इंग्रजी</string>
+    <string name="marathi">मराठी</string>
+    <string name="submit">प्रस्तुत करणे</string>
+    <string name="open_nav">नेव्हिगेशन उघडा</string>
+    <string name="close_nav">नेव्हिगेशन बंद करा</string>
+    <string name="hello_blank_fragment">हॅलो रिक्त तुकडा</string>
+    <string name="first_item">" ऊस उत्पादनाची सद्य: स्थिती व पुढील दिशा"</string>
+    <string name="second_item">ऊस लागवडीसाठी जमीन आणि हंगाम</string>
+    <string name="third_item">माती चाचणी</string>
+    <string name="fourth_item">अमिनी आणि पदार्थाचे फलन आणि व्यवस्थापन</string>
+    <string name="fifth_item">हिरवे खत</string>
+    <string name="sixth_item">ऊस लागवड आणि बियाणे निवडण्यासाठी जास्तीत जास्त वाण</string>
+    <string name="seventh_item">पर्जन्यमान व ओत्राप्रमाणे ऊस लागवडीसाठी लागणारे बियाणे</string>
+    <string name="eigth_item">ऊस बियाणे पेरणी प्रक्रिया-महत्व</string>
+    <string name="nineth_item">ऊस लागवड तंत्रज्ञान</string>
+    <string name="tenth_item">माती परीक्षणानुसार हंगामात रासायनिक खतांची आवश्यकता असते.</string>
+    <string name="eleven_item">ऊस पिकासाठी आवश्यक सूक्ष्म अन्नद्रव्ये</string>
+    <string name="twelve_item">ऊस लागवडीसाठी केंद्रीय खत</string>
+    <string name="thirteen_item">उसाचे पाणी व्यवस्थापन</string>
+    <string name="fourteen_item">उसाचे आंतरपीक</string>
+    <string name="fifteen_item">उसावरील कीड व रोग व नियंत्रण</string>
+    <string name="sixteen_item">कसावा पिकाचे व्यवस्थापन</string>
+    <string name="seventeen_item">जिवंतांना मृत बनवणे</string>
+    <string name="eighteen_item">गांडूळ खत तयार करणे.</string>
+</resources>

@@ -1,0 +1,1271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".sugarcaneSeeds.SeedsInTrayActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gray">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".userInputTables.UFirstTableActivity">
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tbPageTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:elevation="4dp"
+                android:padding="@dimen/padding_small"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tvPageTitle"
+                    style="@style/ACTextMediumBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" शेतकर्यांना घरच्या घरी उस रोपे तयार करण्यासाठी एकरी रोपे संख्या नुसार लागणारे मातीखात मिश्रण (माध्यम) \n (कोकोपीट+शेणखत+पोयटामाती+वाळू)" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvEkakAndNPK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tbPageTitle">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/lltext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <TextView
+                            android:id="@+id/tvEkak"
+                            style="@style/ACTextMediumBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/margin_small"
+                            android:text="क्षेत्र निवडा " />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/lltext">
+
+                        <RadioGroup
+                            android:id="@+id/rgRadioGroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <RadioButton
+                                android:id="@+id/rbEkar"
+                                style="@style/ACTextMediumBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="एकर" />
+
+                            <RadioButton
+                                android:id="@+id/rbHector"
+                                style="@style/ACTextMediumBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="हेक्टर" />
+
+                            <RadioButton
+                                android:id="@+id/rbGunta"
+                                style="@style/ACTextMediumBold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="गुंठा" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvLandInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvEkakAndNPK">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvLandMeasurment"
+                        style="@style/ACTextMediumBold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="उसाच्या क्षेत्राचे मोज माप "
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_small"
+                        android:weightSum="3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvLandMeasurment">
+
+                        <Button
+                            android:id="@+id/btMinus"
+                            style="@style/ACTextMediumBold"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="@dimen/margin_small"
+                            android:layout_weight="1"
+                            android:background="@drawable/circular_button"
+                            android:text="-"
+                            android:textColor="@color/black"
+                            android:textSize="32dp" />
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/etLand"
+                                style="@style/ACTextLargeBold"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:inputType="numberDecimal"
+                                android:text="0.0"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/tvMeasurement"
+                                style="@style/ACTextMediumBold"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/etLand" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        <Button
+                            android:id="@+id/btPlus"
+                            style="@style/ACTextMediumBold"
+                            android:layout_width="0dp"
+                            android:layout_height="100dp"
+                            android:layout_marginEnd="@dimen/margin_small"
+                            android:layout_weight="1"
+                            android:background="@drawable/circular_button"
+                            android:backgroundTint="@null"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textSize="32dp" />
+
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSeedsTtile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvLandInput">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        style="@style/ACTextMedium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="ट्रेमधील रोपे तयार करण्यासठी लागणारे माध्यम (किलोमध्ये)"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDistanceFour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvSeedsTtile">
+
+                <TextView
+                    android:padding="@dimen/padding_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/ACTextMediumBold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="दोन सरीतील अंतर ४ फुट"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv4Feet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvDistanceFour">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llTitles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="दोन रोपातील अंतर" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="१.५ फुट" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="२ फुट" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="२.५ फुट" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llTitles">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="रोप संख्या" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowOne">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="कोकोपीट" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowThree"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowTwo">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="शेणखत" />
+
+                        <TextView
+                            android:id="@+id/tvManureOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvManureTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvManureTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowFour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowThree">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="पोयटा माती" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowFour">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="बारीक वाळू" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDistanceFourFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cv4Feet">
+
+                <TextView
+                    android:padding="@dimen/padding_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/ACTextMediumBold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="दोन सरीतील अंतर ४.५ फुट"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv4FiveFeet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvDistanceFourFive">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llTitlesFourFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="दोन रोपातील अंतर" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="१.५ फुट" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="२ फुट" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="२.५ फुट" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowOneFourFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llTitlesFourFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="रोप संख्या" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsFFOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsFFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsFFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowTwoFourFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowOneFourFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="कोकोपीट" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoOneFFFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoFFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoFFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowThreeFourFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowTwoFourFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="शेणखत" />
+
+                        <TextView
+                            android:id="@+id/tvManureFFOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvManureFFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvManureFFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowFourFourFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowThreeFourFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="पोयटा माती" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaFFOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaFFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaFFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowFiveFourFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowFourFourFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="बारीक वाळू" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSFFOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSFFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSFFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDistanceFive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cv4FiveFeet">
+
+                <TextView
+                    android:padding="@dimen/padding_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/ACTextMediumBold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="दोन सरीतील अंतर ५ फुट"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvFiveFeet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvDistanceFive">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/llTitlesFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="दोन रोपातील अंतर" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="१.५ फुट" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="२ फुट" />
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="२.५ फुट" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowOneFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llTitlesFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="रोप संख्या" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsFOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSeedsFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowTwoFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowOneFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="कोकोपीट" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoOneFFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvCoCoFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowThreeFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowTwoFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="पोयटा माती" />
+
+                        <TextView
+                            android:id="@+id/tvManureFOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvManureFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvManureFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowFourFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowThreeFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="शेणखत" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaFOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvPoytaFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRowFiveFive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/llRowFourFive">
+
+                        <TextView
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="बारीक वाळू" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSFOneFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSFTwo"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                        <TextView
+                            android:id="@+id/tvSamllSFTwoFive"
+                            style="@style/ACTextMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_small"
+                            android:text="0" />
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</layout>
+
+
+
+
+
+
+
+
